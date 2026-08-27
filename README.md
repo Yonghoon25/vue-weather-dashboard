@@ -67,16 +67,21 @@ src/
 ### Hands on - Weather Mockup
 **▪ 과제 요구사항**
 1. **배열 렌더링 (v-for)**
-   - 임의의 날씨 데이터 배열을 활용해 화면에 날씨 카드를 반복 출력한다.
-   - `:key`에 id 바인딩 필수
+<img width="432" height="113" alt="image" src="https://github.com/user-attachments/assets/004bb19e-d1ae-40f1-b3d9-53e1ce52e295" /><br>
+   - weatherList에 있는 값들을 id를 key값으로 name을 출력하게끔 v-for를 사용하여 배열 렌더링을 구성하였다.
+
 2. **조건부 렌더링 (v-if)**
-   - 기온이 25도 이상인 도시는 "🔥 더움 (25도 이상)", 25도 미만인 도시는 "❄️ 선선함 (25도 미만)" 라벨을 붙인다. (조건 커스텀 가능)
+<img width="325" height="50" alt="image (2)" src="https://github.com/user-attachments/assets/9a8e29bc-6b71-4c3c-bf73-b2594d44ce1a" /><br>
+   - 기온이 25도 이상이면 더움, 25도 미만이면 선선함을 표시하도록 v-if와 v-else를 적용하였다.
 3. **양방향 바인딩 및 한글 처리 (:value, @input)**
-   - 도시 이름을 한글로 검색하는 input을 만든 후 한글 입력 후 입력한 도시명을 출력한다.
+   - 검색어를 ref로 관리하고 입력 요소의 :value와 @input을 연결하였다. 사용자가 도시명을 입력하면 searchQuery가 갱신되고, 검색 결과가 화면에 반영된다.<br>
+<img width="207" height="27" alt="image (3)" src="https://github.com/user-attachments/assets/73b589c0-3a06-4764-8709-509c36c88c4f" /> <br>
+<img width="339" height="109" alt="image (4)" src="https://github.com/user-attachments/assets/6f655660-328c-4ad4-9b50-e7ff0ba8c892" /><br>
+
 4. **이벤트 및 수식어**
    - 지역별 날씨 현황 카드를 누르면 상태바에 “{도시}이 선택되었습니다.” 표기
    - 지역별 날씨 현황 카드 내부의 [상세보기] 버튼을 누르면 버블링 없이 해당 도시의 날씨 내용을 `window.alert`로 띄운다.
-5. **본인만의 데이터를 추가하고 이를 기초로 Mockup을 추가한다.**
+6. **본인만의 데이터를 추가하고 이를 기초로 Mockup을 추가한다.**
 
 ### Hands on - Weather Composition (Composition API)
 **▪ 과제 요구사항**
